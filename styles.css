@@ -1,0 +1,67 @@
+body{
+    background: url(tree.jfif) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+#open-btn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 300px;
+    height: 80px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 5px;
+    transition: 0.05s;
+}
+#open-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+#model{
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 80px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    animation: animatemodel .4s;
+    
+}
+
+#close-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    color: blueviolet;
+}
+#container{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;;
+}
+@keyframes animatemodel {
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
